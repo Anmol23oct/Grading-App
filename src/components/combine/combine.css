@@ -1,0 +1,13 @@
+
+.tab1{
+    background-color: blue;
+    height: 700px;
+}
+.tab1.inside{
+    display: inline-block;
+    background-color: red;
+}
+.tab2{
+    background-color: green;
+    height:700px;
+}
