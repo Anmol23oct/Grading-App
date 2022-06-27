@@ -1,0 +1,20 @@
+.iframe {
+    height: calc(100vh);
+    display: inline-block;
+}
+
+.gutter {
+    background-color: black;
+  }
+  
+  .gutter-horizontal {
+    cursor: ew-resize;
+  }
+  
+  .comp {
+    
+  }
+
+  .wrap {
+    display: flex;
+  }
