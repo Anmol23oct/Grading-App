@@ -7,7 +7,7 @@ import Nav from '../../components/nav/Nav'
 import { Switch as Switch } from 'antd';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-function SplitScreen() {
+function JupyterNYou() {
 
   function LeftTab() {
     return (
@@ -28,11 +28,10 @@ function SplitScreen() {
       </Router> */}
       {/*<Draggable defaultClassName='dragger' axis='y'><div><SideMenu /></div></Draggable>*/}
       <iframe className='iframe' src="http://data2.cs.rutgers.edu/user/as3593/tree/?igu=1" ></iframe>
-      {/*<iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>*/}
     </div>
   )}
   function RightTab() {
-    return <iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>;
+    return <iframe className='iframe' src="https://www.you.com" ></iframe>;
   }
 
   /*
@@ -65,4 +64,4 @@ function SplitScreen() {
   )
 }
 
-export default SplitScreen
+export default JupyterNYou

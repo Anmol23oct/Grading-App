@@ -4,11 +4,39 @@ import You from './components/you/you'
 import Nav from './components/nav/Nav'
 import Combine from './components/combine/combine'
 import SplitScreen from './components/combine/SplitScreen'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import JnC from './pages/JnC'
+import JnY from './pages/JnY'
+import Jonly from './pages/Jonly'
 
 const App = () => {
     return (
       <>
-        <div><SplitScreen/></div>
+
+    <div>
+          
+
+      <Router>
+        <Nav/>
+        <div className='content'>
+          <Routes>
+            <Route path='/' element={<JnC/>}>
+              
+            </Route>
+            <Route path='/JnY' element={<JnY/>}>
+           
+            </Route>
+            <Route path='/Jupyter' element={<Jonly/>}/>
+          </Routes>
+        </div>
+      </Router>
+          
+          
+          
+          {/*<SplitScreen/>*/}
+          
+          
+    </div>
             {/*<div className='codePost'><CodePost/></div>  
             <div className="you"><You/></div> 
             <div id="nav"><Nav/></div>  */}

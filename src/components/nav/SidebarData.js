@@ -12,28 +12,28 @@ export const SidebarData=[
         cName:'nav-text'
     },
     {
-        title: 'CodePost',
-        path:'/reports',
+        title: 'J & Y',
+        path:'/JnY',
         icon: <IoIcons.IoIosPaper/>,
         cName:'nav-text'
     },
     {
-        title: 'Piazza',
-        path:'/team',
+        title: 'Jupyter',
+        path:'/Jupyter',
         icon: <IoIcons.IoMdPeople/>,
         cName:'nav-text'
-    },
-    {
-        title: 'C & Y',
-        path:'/message',
-        icon: <FaIcons.FaEnvelopeOpenText/>,
-        cName:'nav-text'
-    },
-    {
-        title: 'C & J',
-        path:'/support',
-        icon: <IoIcons.IoIosAddCircle/>,
-        cName:'nav-text'
-    },
+    }
+    // {
+    //     title: 'C & Y',
+    //     path:'/Jupyter',
+    //     icon: <FaIcons.FaEnvelopeOpenText/>,
+    //     cName:'nav-text'
+    // },
+    // {
+    //     title: 'C & J',
+    //     path:'/support',
+    //     icon: <IoIcons.IoIosAddCircle/>,
+    //     cName:'nav-text'
+    // },
     
 ]
