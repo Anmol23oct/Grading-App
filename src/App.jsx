@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import JnC from './pages/JnC'
 import JnY from './pages/JnY'
 import Jonly from './pages/Jonly'
-
+import NotFound from './pages/404'
 const App = () => {
     return (
       <>
@@ -27,7 +27,9 @@ const App = () => {
            
             </Route>
             <Route path='/Jupyter' element={<Jonly/>}/>
+            <Route path='*' element={<NotFound/>}/>
           </Routes>
+
         </div>
       </Router>
           
