@@ -1,8 +1,10 @@
 import React from 'react'
 
+
 const Jupyter = () => {
   return (
-    <div>      <iframe className='iframe' src="http://data2.cs.rutgers.edu/user/as3593/tree/?igu=1" ></iframe>
+    
+    <div>      <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
     </div>
   )
 }

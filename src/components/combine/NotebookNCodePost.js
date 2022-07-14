@@ -7,7 +7,7 @@ import Nav from '../../components/nav/Nav'
 import { Switch as Switch } from 'antd';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-function JupyterNYou() {
+function NotebookNCodePost() {
 
   function LeftTab() {
     return (
@@ -27,11 +27,11 @@ function JupyterNYou() {
         </div>
       </Router> */}
       {/*<Draggable defaultClassName='dragger' axis='y'><div><SideMenu /></div></Draggable>*/}
-      <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
+      <iframe className='iframe' src="https://data2.cs.rutgers.edu/user-redirect/tree/?igu=1" ></iframe>
     </div>
   )}
   function RightTab() {
-    return <iframe className='iframe' src="https://www.you.com" ></iframe>;
+    return <iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>;
   }
 
   /*
@@ -64,4 +64,4 @@ function JupyterNYou() {
   )
 }
 
-export default JupyterNYou
+export default NotebookNCodePost

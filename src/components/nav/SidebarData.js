@@ -6,29 +6,29 @@ import * as IoIcons from 'react-icons/io';
 
 export const SidebarData=[
     {
-        title: 'Home',
+        title: 'Jupyter Lab',
         path:'/',
         icon: <AiIcons.AiFillHome/>,
         cName:'nav-text'
     },
     {
-        title: 'J & Y',
+        title: 'Jupyter Lab and Search',
         path:'/JnY',
         icon: <IoIcons.IoIosPaper/>,
         cName:'nav-text'
     },
     {
-        title: 'Jupyter',
-        path:'/Jupyter',
+        title: 'Notebook and CodePost',
+        path:'/NnC',
         icon: <IoIcons.IoMdPeople/>,
         cName:'nav-text'
-    }
-    // {
-    //     title: 'C & Y',
-    //     path:'/Jupyter',
-    //     icon: <FaIcons.FaEnvelopeOpenText/>,
-    //     cName:'nav-text'
-    // },
+    },
+     {
+         title: 'Jupyter Lab and CodePost',
+         path:'/JnC',
+         icon: <FaIcons.FaEnvelopeOpenText/>,
+         cName:'nav-text'
+     }
     // {
     //     title: 'C & J',
     //     path:'/support',

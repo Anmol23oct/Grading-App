@@ -27,7 +27,7 @@ function SplitScreen() {
         </div>
       </Router> */}
       {/*<Draggable defaultClassName='dragger' axis='y'><div><SideMenu /></div></Draggable>*/}
-      <iframe className='iframe' src="http://data2.cs.rutgers.edu/user/as3593/tree/?igu=1" ></iframe>
+      <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
       {/*<iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>*/}
     </div>
   )}

@@ -7,6 +7,7 @@ import SplitScreen from './components/combine/SplitScreen'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import JnC from './pages/JnC'
 import JnY from './pages/JnY'
+import NnC from './pages/NnC'
 import Jonly from './pages/Jonly'
 import NotFound from './pages/404'
 const App = () => {
@@ -20,13 +21,15 @@ const App = () => {
         <Nav/>
         <div className='content'>
           <Routes>
-            <Route path='/' element={<JnC/>}>
+            <Route path='/' element={<Jonly/>}>
               
             </Route>
             <Route path='/JnY' element={<JnY/>}>
            
             </Route>
             <Route path='/Jupyter' element={<Jonly/>}/>
+            <Route path='/JnC' element={<JnC/>}/>
+            <Route path='/NnC' element={<NnC/>}/>
             <Route path='*' element={<NotFound/>}/>
           </Routes>
 

@@ -7,7 +7,7 @@ import './Nav.css'
 import {IconContext} from 'react-icons'
 function Navbar(){
     const [sidebar, setSidebar]=useState(false) 
-
+    const [title,setTitle]=useState("Jupyter Lab")
     const showSidebar=()=> setSidebar(!sidebar)
     return(
         <>
@@ -15,7 +15,10 @@ function Navbar(){
          <div className='navbar'> 
             <Link to="#" className='menu-bars'>
                 <FaIcons.FaBars onClick={showSidebar}/>
+
             </Link>
+
+            <span className="title">{title}</span>
          </div>
          <nav className={sidebar? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items' onClick={showSidebar}>
@@ -25,13 +28,15 @@ function Navbar(){
 
                     </Link>
                 </li>
-
                 {SidebarData.map((item,index)=>{
                     return (
                         <li key={index} className={item.cName}>
                             <Link to={item.path}>
+                                <a
+                                 onClick={() => setTitle(item.title)}>
                                 {item.icon}
                                 <span>{item.title}</span>
+                                </a>
                             </Link>
                         </li>
                     )
