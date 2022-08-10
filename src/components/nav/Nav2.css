@@ -41,7 +41,6 @@
     background: lightskyblue;
     color: #000;
     transition: all 0.5s;
-
 }
 
 .active{
@@ -51,10 +50,25 @@
 
 .icon, .link_text{
     font-size: 20px;
-
 }
 
-.link:before {
+.link span{
+    position: absolute;
+    left:4rem;
+    top: -0.25;
+    color: white;
+    background: #425a65;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    transition: all 200ms ease-in;
+    /* opacity: 0; */
+    display: none;
+}
+
+.link:hover span{
+    display: block;
+}
+/* .link::after {
     content: attr(data-tooltip);
     position: absolute;
     left:4rem;
@@ -65,9 +79,16 @@
     border-radius: 0.2rem;
     transition: all 200ms ease-in;
     opacity: 0;
-}
+} 
 
-:hover::before{
+:hover::after{
     opacity: 1;
     left: 4.5rem;
-}
+} */
+
+
+
+/* .icon:hover{
+    opacity: 1;
+    left: 4.5rem;
+} */

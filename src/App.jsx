@@ -23,12 +23,11 @@ const App = () => {
           <Route path='/' element={<Jonly/>}>
             
           </Route>
-          <Route path='/JnY' element={<JnY/>}>
+          <Route path='/Assignment_Completion' element={<JnY/>}>
          
           </Route>
-          <Route path='/Jupyter' element={<Jonly/>}/>
-          <Route path='/JnC' element={<JnC/>}/>
-          <Route path='/NnC' element={<NnC/>}/>
+          <Route path='/Grading_Feedback' element={<JnC/>}/>
+          <Route path='/Fetch_Submit' element={<NnC/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
 

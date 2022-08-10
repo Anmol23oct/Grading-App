@@ -29,6 +29,7 @@ function Navbar2(){
                 {
                     SidebarData.map((item,index)=>(
                         <NavLink onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} to={item.path} key={index} className="link" activeclassName="active" data-tooltip={item.title}>
+                            <span>{item.title}</span>
                             <div className='icon'>{item.icon}</div>
                             <div style={{display: sidebar ? "block":"none"}} className='link_text'>{item.title}</div>
                         </NavLink>
