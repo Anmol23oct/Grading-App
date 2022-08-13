@@ -3,16 +3,16 @@ import Split from 'react-split'
 import './SplitScreen.css'
 import Draggable from 'react-draggable';
 import SideMenu from './SideMenu';
-import Nav from '../../components/nav/Nav'
+import Nav from '../../components/nav/nav'
 import { Switch as Switch } from 'antd';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function NotebookNCodePost() {
 
   function LeftTab() {
     return (
-    <div className='frame-container'>
-      {/* <Router>
+      <div className='frame-container'>
+        {/* <Router>
         <Nav/>
         <div className='content'>
           <Routes>
@@ -26,10 +26,11 @@ function NotebookNCodePost() {
           </Routes>
         </div>
       </Router> */}
-      {/*<Draggable defaultClassName='dragger' axis='y'><div><SideMenu /></div></Draggable>*/}
-      <iframe className='iframe' src="https://data2.cs.rutgers.edu/user-redirect/tree/?igu=1" ></iframe>
-    </div>
-  )}
+        {/*<Draggable defaultClassName='dragger' axis='y'><div><SideMenu /></div></Draggable>*/}
+        <iframe className='iframe' src="https://data2.cs.rutgers.edu/user-redirect/tree/?igu=1" ></iframe>
+      </div>
+    )
+  }
   function RightTab() {
     return <iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>;
   }
@@ -52,14 +53,14 @@ function NotebookNCodePost() {
 
   return (
     <div className='container'>
-    <Split 
-      class="split" 
-      sizes={[50, 50]}
-      gutterSize={10}
+      <Split
+        class="split"
+        sizes={[50, 50]}
+        gutterSize={10}
       >
         <LeftTab />
         <RightTab />
-    </Split>
+      </Split>
     </div>
   )
 }

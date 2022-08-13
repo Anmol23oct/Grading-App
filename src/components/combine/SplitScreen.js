@@ -3,16 +3,16 @@ import Split from 'react-split'
 import './SplitScreen.css'
 import Draggable from 'react-draggable';
 import SideMenu from './SideMenu';
-import Nav from '../../components/nav/Nav'
+import Nav from '../../components/nav/nav'
 import { Switch as Switch } from 'antd';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function SplitScreen() {
 
   function LeftTab() {
     return (
-    <div className='frame-container'>
-      {/* <Router>
+      <div className='frame-container'>
+        {/* <Router>
         <Nav/>
         <div className='content'>
           <Routes>
@@ -26,11 +26,12 @@ function SplitScreen() {
           </Routes>
         </div>
       </Router> */}
-      {/*<Draggable defaultClassName='dragger' axis='y'><div><SideMenu /></div></Draggable>*/}
-      <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
-      {/*<iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>*/}
-    </div>
-  )}
+        {/*<Draggable defaultClassName='dragger' axis='y'><div><SideMenu /></div></Draggable>*/}
+        <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
+        {/*<iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>*/}
+      </div>
+    )
+  }
   function RightTab() {
     return <iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>;
   }
@@ -53,14 +54,14 @@ function SplitScreen() {
 
   return (
     <div className='container'>
-    <Split 
-      class="split" 
-      sizes={[50, 50]}
-      gutterSize={10}
+      <Split
+        class="split"
+        sizes={[50, 50]}
+        gutterSize={10}
       >
         <LeftTab />
         <RightTab />
-    </Split>
+      </Split>
     </div>
   )
 }
