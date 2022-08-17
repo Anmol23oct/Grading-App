@@ -19,15 +19,21 @@ body {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
     text-transform: uppercase;
-
+    position: relative;
+    margin-top: 0px;
+    align-items: baseline;
 }
 
 .btn:hover {
     background: teal;
     color: white;
 }
+
+ .card_action{
+    margin-top: 10%;
+} 

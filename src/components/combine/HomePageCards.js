@@ -10,7 +10,7 @@ import {
 const useStyles = makeStyles((theme) => ({
     root: {
         width: 300,
-        display: 'flex',
+        display: 'grid',
         marginRight: 15,
         boxShadow: '12px -12px teal',
         marginLeft: 15,
@@ -26,16 +26,17 @@ const HomePageCards = (props) => {
     const classes = useStyles();
 
     return (
-        <Card raised className={classes.root} >
+        <Card raised className={classes.root} variant="outlined" >
             <CardContent >
                 <Typography color="white" variant="h5" >
                     <Box fontWeight="fontWeightBold" color="white">{title}</Box>
                 </Typography>
-                <Typography variant="body1" >{children}</Typography>
-                <CardActions >
-                    {buttons}
-                </CardActions>
+                <Typography variant="outline" >{children}</Typography>
             </CardContent>
+            <CardActions className="card_action">
+                {buttons}
+            </CardActions>
+
         </Card >
     );
 };

@@ -8,9 +8,11 @@ import {
   Box,
 } from "@material-ui/core";
 import './Home.css'
-
+import NewHomeCard from './NewHomeCard';
+//import HomePageCards2 from "./HomePageCards2";
 
 import HomePageCards from "./HomePageCards";
+
 
 const Home = () => {
   return (
@@ -73,7 +75,6 @@ const Home = () => {
 
 
           </HomePageCards>
-
           <Divider style={{ width: "100%", marginTop: 25, marginBottom: 10 }} />
         </Grid >
         <Grid item xs={1} />
