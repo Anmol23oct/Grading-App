@@ -1,0 +1,33 @@
+.title {
+    font-size: 60px;
+    font-weight: 500;
+    color: #feffff;
+    font-family: Verdana, Georgia, sans-serif;
+    font-variant: small-caps;
+    font-style: italic;
+
+}
+
+body {
+    background: #2d3436;
+}
+
+.btn {
+    background-color: Transparent;
+    border: solid 2px teal;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    text-transform: uppercase;
+
+}
+
+.btn:hover {
+    background: teal;
+    color: white;
+}

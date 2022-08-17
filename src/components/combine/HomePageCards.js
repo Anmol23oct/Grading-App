@@ -9,11 +9,15 @@ import {
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 300,
-        minWidth: 300,
+        width: 300,
+        display: 'flex',
         marginRight: 15,
+        boxShadow: '12px -12px teal',
         marginLeft: 15,
         marginBottom: 30,
+        backgroundColor: "#3c474a",
+        color: "#feffff",
+
     },
 }));
 
@@ -22,17 +26,17 @@ const HomePageCards = (props) => {
     const classes = useStyles();
 
     return (
-        <Card raised className={classes.root}>
-            <CardContent>
-                <Typography variant="h5">
-                    <Box fontWeight="fontWeightBold">{title}</Box>
+        <Card raised className={classes.root} >
+            <CardContent >
+                <Typography color="white" variant="h5" >
+                    <Box fontWeight="fontWeightBold" color="white">{title}</Box>
                 </Typography>
-                <Typography variant="body1">{children}</Typography>
-                <CardActions style={{ justifyContent: "space-around" }}>
+                <Typography variant="body1" >{children}</Typography>
+                <CardActions >
                     {buttons}
                 </CardActions>
             </CardContent>
-        </Card>
+        </Card >
     );
 };
 

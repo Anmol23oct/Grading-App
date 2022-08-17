@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import JnC from './pages/JnC'
 import JnY from './pages/JnY'
 import NnC from './pages/NnC'
-import Jonly from './pages/Jonly'
+import HomeOnly from './pages/HomeOnly'
 import NotFound from './pages/404'
 import Nav2 from './components/nav/Nav2'
 import { useNavigate } from 'react-router-dom';
@@ -23,7 +23,7 @@ const App = () => {
 
         <main>
           <Routes>
-            <Route path='/' element={<Jonly />}>
+            <Route path='/' element={<HomeOnly />}>
             </Route>
             <Route path='/Assignment_Completion' element={<JnY />}>
 
