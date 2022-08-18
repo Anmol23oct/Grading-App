@@ -1,6 +1,7 @@
 {
   "name": "grading-app-ver2",
   "version": "0.1.0",
+  "homepage": "https://codebench.cs.rutgers.edu",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
