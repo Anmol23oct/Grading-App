@@ -33,7 +33,7 @@ const Home = () => {
             }
           >
             If you haven't used Computer Science Department facilities before, please click link below. You will be asked to login with your University netid and password.  Choose the "ilab" cluster. You'll then be asked to choose a password. It will work with this system and anything else in the computer science department. Setting this password will not have any effect on your University password. It's a separate password for computer science.
-            If you forget this password, you can go Forgot Password and use the set password link to reset yout computer science password.
+            If you forget this password, you can go to Forgot Password link to reset yout computer science password.
 
           </HomePageCards>
 
