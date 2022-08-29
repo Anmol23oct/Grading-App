@@ -8,9 +8,6 @@ import {
   Box,
 } from "@material-ui/core";
 import './Home.css'
-import NewHomeCard from './NewHomeCard';
-//import HomePageCards2 from "./HomePageCards2";
-
 import HomePageCards from "./HomePageCards";
 
 
@@ -46,7 +43,9 @@ const Home = () => {
           }
           >
             To complete the assignment, click on the button below. You will be able
-            to edit, run, and test your assignment.
+            to edit, run, and test your assignment. You can also access You.com,
+            a customized search platform for CS439, for any research you might
+            need to do.
           </HomePageCards>
 
           <HomePageCards title="Step 3" buttons={

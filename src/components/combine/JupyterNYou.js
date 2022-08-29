@@ -3,7 +3,6 @@ import Split from 'react-split'
 import './SplitScreen.css'
 import Draggable from 'react-draggable';
 import SideMenu from './SideMenu';
-import Nav from '../../components/nav/nav'
 import { Switch as Switch } from 'antd';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
