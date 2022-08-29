@@ -23,6 +23,21 @@ const Home = () => {
       <Grid container>
         <Grid item xs={1} />
         <Grid item container justifyContent="center" xs={20}>
+        <HomePageCards
+            title="Note"
+            buttons={
+              <>
+                <a href="https://services.cs.rutgers.edu/accounts/activate/activate" class="btn" target='_blank'>Click Here </a>
+                <a href="https://services.cs.rutgers.edu/accounts" class="btn" target='_blank'>Forgot Password </a>
+              </>
+            }
+          >
+            If you haven't used Computer Science Department facilities before, please click link below. You will be asked to login with your University netid and password.  Choose the "ilab" cluster. You'll then be asked to choose a password. It will work with this system and anything else in the computer science department. Setting this password will not have any effect on your University password. It's a separate password for computer science.
+            If you forget this password, you can go Forgot Password and use the set password link to reset yout computer science password.
+
+          </HomePageCards>
+
+
           <HomePageCards
             title="Step 1"
             buttons={
