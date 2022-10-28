@@ -1,10 +1,11 @@
 import React from 'react'
 import SplitScreen from '../components/combine/SplitScreen'
 import TitleText from '../utils/TitleText'
+import CJTab from '../components/Tabs/CJtab'
 const JnC = () => {
-  TitleText('CodeBench - Grading/Feedback')
+  TitleText('CodeBench - Grading Feedback')
   return (
-    <div><SplitScreen/></div>
+    <div><CJTab/></div>
   )
 }
 

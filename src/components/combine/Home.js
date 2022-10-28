@@ -42,50 +42,52 @@ const Home = () => {
             title="Step 1"
             buttons={
               <>
-                <a href="/Fetch_Submit" class="btn">fetch </a>
+                <a href="/Fetch_Code_Submit" class="btn">Fetch,Code,Submit </a>
               </>
             }
           >
-            Download the assignment here.
+            <h3>Fetch, Code and Submit (integrated hub + you.com).</h3>
+            
+
+            Fetch your assignment from nbgrader, code with customized you.com search, and submit through nbgrader. If you are not able to submit through codebench, email the lab to TA.
           </HomePageCards>
 
           <HomePageCards title="Step 2" buttons={
             <>
-              <a href="/Assignment_Completion" class="btn" >
-                Complete Assignment
+              <a href="/Grading_Feedback" class="btn" >
+                Grading Feedback
               </a>
             </>
           }
           >
-            To complete the assignment, click on the button below. You will be able
-            to edit, run, and test your assignment. You can also access You.com,
-            a customized search platform for CS439, for any research you might
-            need to do.
+            <h3>Check submissions and Grades (intgerated hub + codepost).</h3>
+            
+            Check codepost folder in the hub for submitted version, check grade and feedback through codepost
+
           </HomePageCards>
 
           <HomePageCards title="Step 3" buttons={
             <>
-              <a href="/Fetch_Submit" class="btn" >
-                Submit
+              <a href="/Admin" class="btn" >
+                Admin
               </a>
             </>
           }
           >
-            Once you have finished your assignment, submit it here.
+            Admin grading access only
 
 
           </HomePageCards>
 
           <HomePageCards title="Step 4" buttons={
             <>
-              <a href="/Grading_Feedback" class="btn" >
-                Grading/Feedback
+              <a href="/Help" class="btn" >
+                Help
               </a>
             </>
           }
           >
-            You can view your graded assignment as well as any feedback you received
-            here.
+           Submit questions on codebench platform. Click here to get help. For urgent inquiries, please contact the staff directly.
 
 
           </HomePageCards>

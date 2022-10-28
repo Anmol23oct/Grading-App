@@ -11,7 +11,6 @@ import HomeOnly from './pages/HomeOnly'
 import NotFound from './pages/404'
 import Nav2 from './components/nav/Nav2'
 import ContactForm from './components/Contact-Us/ContactForm2'
-import { useNavigate } from 'react-router-dom';
 
 const App = () => {
 
@@ -24,14 +23,13 @@ const App = () => {
 
         <main>
           <Routes>
-            <Route path='/' element={<HomeOnly />}>
-            </Route>
-            <Route path='/Assignment_Completion' element={<JnY />}>
+            <Route path='/' element={<HomeOnly />}/>
+            <Route path='/Fetch_Code_Submit' element={<JnY />}>
 
             </Route>
             <Route path='/Grading_Feedback' element={<JnC />} />
-            <Route path='/Fetch_Submit' element={<NnC />} />
-            <Route path='/Contact-Us' element={<ContactForm />} />
+            <Route path='/Admin' element={<NnC />} /> 
+            <Route path='/Help' element={<ContactForm />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
 

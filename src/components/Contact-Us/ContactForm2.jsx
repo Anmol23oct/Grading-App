@@ -4,8 +4,9 @@ import {db,storage} from './firebase.js'
 import {addDoc, collection,} from 'firebase/firestore';
 import {ref,uploadBytesResumable,getDownloadURL} from "firebase/storage";
 import { async } from '@firebase/util';
-
+import TitleText from '../../utils/TitleText'
 const ContactForm2 = () => {
+    TitleText('CodeBench - Help')
     const [name,setName] = useState("");
     const [email,setEmail]= useState("");
     const [message,setMessage] = useState("");
