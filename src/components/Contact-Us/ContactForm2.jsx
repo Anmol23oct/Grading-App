@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './ContactForm2.css'
-import {db,storage} from './firebase.js'
-import {addDoc, collection,} from 'firebase/firestore';
+import {db,storage,analytics} from './firebase.js'
+import { getAnalytics, logEvent } from "firebase/analytics";
+import {addDoc, collection} from 'firebase/firestore';
 import {ref,uploadBytesResumable,getDownloadURL} from "firebase/storage";
 import { async } from '@firebase/util';
 import TitleText from '../../utils/TitleText'
@@ -102,9 +103,14 @@ const handleSubmit = async(event) => {
 
 
 
-
+useEffect(() =>{
+    const analytics = getAnalytics();
+    logEvent(analytics, 'contact_us')
+    console.log("contactus")
+});
 
   return (
+    
     <div className='app'>
         <form className='form' onSubmit={handleSubmit}>
             <h1>
