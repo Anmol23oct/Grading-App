@@ -9,8 +9,6 @@ import * as AiIcons from 'react-icons/ai';
 import Split from 'react-split'
 import './SplitScreen.css'
 
-
-
 function LeftTab() {
   return (
     <div className='frame-container'>
@@ -19,61 +17,53 @@ function LeftTab() {
   )
 }
 function RightTab() {
-  return <iframe className='iframe' src="https://www.codepost.io/?igu=1" ></iframe>;
+  return <iframe className='iframe' src="https://you.com/" ></iframe>;
 }
-const CJtab = () => {
+const JYtab = () => {
   const [tabIndex, setTabIndex] = useState(0);
-  const [tab, settab]=useState("Tab: CodePost" ) 
+  const [tab, settab]=useState("Tab: Search_You" ) 
   const analytics = getAnalytics();
    useEffect(() =>{
       // console.log("tabindex",tabIndex)
       if (tabIndex==0){
-        settab("Tab: CodePost")
+        settab("Tab: Search_You")
         console.log(tab)
         logEvent(analytics, tab)
       }
       // if (tabIndex==1){
-      //   settab("Tab: CodePost")
+      //   settab("Tab: Search_You")
       //   console.log(tab)
       //   logEvent(analytics, tab)
       // }
          else if (tabIndex==1){
-        settab("Tab: JupyterLab_CodePost")
+        settab("Tab: JupyterLab_Search_You")
         console.log(tab)
         logEvent(analytics, tab)
       }
    
  });
-
   return (
     <Tabs className='tabs' selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
     <TabList>
-    {/* <Tab> JupyterLab </Tab> */}
-      <Tab>CodePost </Tab>
-      <Tab>JupyterLab | CodePost </Tab>
+      {/* <Tab> JupyterLab </Tab> */}
+      <Tab> You</Tab>
+      <Tab>JupyterLab | You </Tab>
     </TabList>
 
-    
     {/* <TabPanel>
-      
     <div className='frame-container'>
-          
           <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
 
     </div>
     </TabPanel> */}
-    <TabPanel >
-    
-          <iframe className='iframe' src="https://www.codepost.io/?igu=1"
+    <TabPanel>
+    <iframe className='iframe' src="https://you.com/" 
           id="GFG" >
     
           </iframe>
     </TabPanel>
-    
-    <TabPanel >
-    
+    <TabPanel>
           <div className='container'>
-            
             <Split
               class="split"
               sizes={[75, 25]}
@@ -88,4 +78,4 @@ const CJtab = () => {
   )
 }
 
-export default CJtab
+export default JYtab

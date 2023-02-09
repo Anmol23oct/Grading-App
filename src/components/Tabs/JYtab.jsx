@@ -12,16 +12,16 @@ import './SplitScreen.css'
 function LeftTab() {
   return (
     <div className='frame-container'>
-      <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
+      <iframe className='iframe' src="https://data3.cs.rutgers.edu/?igu=1" ></iframe>
     </div>
   )
 }
 function RightTab() {
-  return <iframe className='iframe' src="https://you.com/for/rutgers" ></iframe>;
+  return <iframe className='iframe' src="https://you.com/" ></iframe>;
 }
 const JYtab = () => {
   const [tabIndex, setTabIndex] = useState(0);
-  const [tab, settab]=useState("Tab: JupyterLab_CodePost" ) 
+  const [tab, settab]=useState("Tab: JupyterLab" ) 
   const analytics = getAnalytics();
    useEffect(() =>{
       // console.log("tabindex",tabIndex)
@@ -30,12 +30,12 @@ const JYtab = () => {
         console.log(tab)
         logEvent(analytics, tab)
       }
-      if (tabIndex==1){
-        settab("Tab: Search_You")
-        console.log(tab)
-        logEvent(analytics, tab)
-      }
-         else if (tabIndex==2){
+      // if (tabIndex==1){
+      //   settab("Tab: Search_You")
+      //   console.log(tab)
+      //   logEvent(analytics, tab)
+      // }
+         else if (tabIndex==1){
         settab("Tab: JupyterLab_Search_You")
         console.log(tab)
         logEvent(analytics, tab)
@@ -46,22 +46,22 @@ const JYtab = () => {
     <Tabs className='tabs' selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
     <TabList>
       <Tab> JupyterLab </Tab>
-      <Tab> You</Tab>
+      {/* <Tab> You</Tab> */}
       <Tab>JupyterLab | You </Tab>
     </TabList>
 
     <TabPanel>
     <div className='frame-container'>
-          <iframe className='iframe' src="https://data2.cs.rutgers.edu/?igu=1" ></iframe>
+          <iframe className='iframe' src="https://data3.cs.rutgers.edu/?igu=1" ></iframe>
 
     </div>
     </TabPanel>
-    <TabPanel>
+    {/* <TabPanel>
     <iframe className='iframe' src="https://you.com/for/rutgers"
           id="GFG" >
     
           </iframe>
-    </TabPanel>
+    </TabPanel> */}
     <TabPanel>
           <div className='container'>
             <Split

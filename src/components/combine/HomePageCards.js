@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import {
     Card,
     CardContent,
+    CardMedia,
     Typography,
     CardActions,
     Box,
@@ -22,16 +23,22 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const HomePageCards = (props) => {
-    const { title, children, buttons } = props;
+    const { title, children, buttons,imgpath, alttext } = props;
     const classes = useStyles();
 
     return (
         <Card raised className={classes.root} variant="outlined" >
+            <CardMedia
+            component="img"
+            height="180"
+            image={imgpath}
+            alt={alttext}
+            />
             <CardContent >
-                <Typography color="white" variant="h5" >
+                <Typography className="card_content" color="white" variant="h5">
                     <Box fontWeight="fontWeightBold" color="white">{title}</Box>
                 </Typography>
-                <Typography variant="outline" >{children}</Typography>
+                <Typography color="white" variant="body2" >{children}</Typography>
             </CardContent>
             <CardActions className="card_action">
                 {buttons}

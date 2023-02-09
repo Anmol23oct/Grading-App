@@ -10,7 +10,8 @@ export const SidebarData = [
         title: 'Home',
         path: '/',
         icon: <AiIcons.AiFillHome />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        left:'111.5rem'
     },
     // {
     //     title: 'Fetch/Submit',
@@ -19,29 +20,34 @@ export const SidebarData = [
     //     cName: 'nav-text'
     // },
     {
-            title: 'Fetch, Submit & Code',
-            path: '/Fetch_Code_Submit',
+            title: 'Code',
+            path: '/code',
             // icon: <IoIcons.IoMdPeople />,
             icon: <BsIcons.BsFillFileCodeFill/>,
-            cName: 'nav-text'
+            cName: 'nav-text',
+            left:'111.6rem'
     },
     {
-        title: 'Grading Feedback',
-        path: '/Grading_Feedback',
+        title: 'Search',
+        path: '/search',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        left:'111rem'
+
     },
     {
-        title: 'Admin',
-        path: '/Admin',
+        title: "Grades",
+        path: '/grades',
         icon: <FaIcons.FaEnvelopeOpenText />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        left:'111rem'
     },
     {
         title: 'Help',
         path: '/Help',
         icon: <MdIcons.MdContactSupport />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        left:'112rem'
     }
     // {
     //     title: 'C & J',

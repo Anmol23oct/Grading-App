@@ -36,6 +36,11 @@ body {
 
 .card_action {
     margin-top: 0%;
+    position: bottom;
+    
+}
+.card_content{
+    position: relative;
 }
 h3{
     color:cornflowerblue;

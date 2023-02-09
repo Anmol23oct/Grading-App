@@ -28,8 +28,11 @@ function Navbar2(){
                 </div>
                 {
                     SidebarData.map((item,index)=>(
+                        // <NavLink onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} to={item.path} key={index} className="link" activeclassName="active" data-tooltip={item.title}>
                         <NavLink onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} to={item.path} key={index} className="link" activeclassName="active" data-tooltip={item.title}>
-                            <span>{item.title}</span>
+
+                            {/* <span style={{left: item.left}}>{item.title}</span> */}
+                            {sidebar?'':<span >{item.title}</span>}
                             <div className='icon'>{item.icon}</div>
                             <div style={{display: sidebar ? "block":"none"}} className='link_text'>{item.title}</div>
                         </NavLink>

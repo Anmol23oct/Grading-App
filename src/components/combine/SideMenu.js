@@ -19,19 +19,22 @@ import {
 } from '@ant-design/icons';
 import { Button, Menu } from 'antd';
 
-function getItem(label, key, icon, children, type) {
+function getItem(label, key, icon, children, type,onselect) {
   return {
     key,
     icon,
     children,
     label,
     type,
+    onselect,
   };
 }
 
 const items = [
-  getItem('Assignments', '1', <CalculatorOutlined />),
-  getItem('Announcements', '2', <BellOutlined />),
+  getItem((<a href="/Grading_feedback">
+  Navigation Four - Link
+</a>), '1', <CalculatorOutlined />),
+  getItem('Announcements', '/Grading_feedback', <BellOutlined />),
   getItem('Calendar', '3', <CalendarOutlined />),
   getItem('Files', '4', <FolderOpenOutlined />),
   getItem('Forum', '5', <CommentOutlined />),
@@ -58,7 +61,7 @@ function SideMenu() {
         onClick={toggleCollapsed}
         style={{width: "40px"}}
       >
-        {collapsed ? <RightOutlined /> : <LeftOutlined />}
+        {collapsed ? <MenuUnfoldOutlined /> : <MenuUnfoldOutlined />}
       </Button>
       <Menu
         mode="inline"
