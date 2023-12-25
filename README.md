@@ -1,4 +1,4 @@
-**About Codebench : Grading App **
+**About Codebench : Grading App**
 
 • Revamp the conventional University grading system by introducing new tools that will optimize the workflow of student submissions and grading.
 
@@ -10,5 +10,6 @@
 
 • Leveraged the key features of you.com search engine, helps to boost overall student experience.
 
-**Architecture **
+**Architecture**
+
 Read the ppt file in order to understand the architecture of whole app.
